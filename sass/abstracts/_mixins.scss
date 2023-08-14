@@ -1,0 +1,56 @@
+@use "sass:map";
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+@mixin setHslaColor($property, $hslcolor, $alpha: 1) {
+	#{$property}: hsla(
+		hue($hslcolor),
+		saturation($hslcolor),
+		lightness($hslcolor),
+		$alpha
+	);
+}
+
+@mixin media($size) {
+	@if map.has-key($breakpoints, $size) {
+		$breakpoint: map-get($breakpoints, $size);
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else {
+		@error 'the keyword #{$size} is not in the $breakpoints map';
+	}
+}
+
+@mixin pseudo(
+	$type: before,
+	$pos: absolute,
+	$content: "",
+	$top: 0,
+	$left: 0,
+	$bottom: 0,
+	$right: 0
+) {
+	position: relative;
+	&::#{$type} {
+		content: $content;
+		position: $pos;
+		top: $top;
+		left: $left;
+		bottom: $bottom;
+		right: $right;
+		@content;
+	}
+}
+
+@mixin heading(
+	$font-size: $heading-font-size,
+	$color: $heading-color-default,
+	$font-weight: $heading-font-weight,
+	$font-family: $heading-font-family
+) {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $color;
+	font-weight: $font-weight;
+}

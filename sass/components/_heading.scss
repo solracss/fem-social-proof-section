@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.heading-1 {
+	@include heading($fs-900);
+}
+
+.heading-2 {
+	@include heading($fs-400, $clr-neutral-100);
+}

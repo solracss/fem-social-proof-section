@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.grid {
+	display: grid;
+	gap: $grid-gap;
+
+	&--item-center {
+		justify-items: center;
+	}
+}

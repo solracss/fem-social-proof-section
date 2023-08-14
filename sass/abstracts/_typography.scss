@@ -1,0 +1,14 @@
+@use "./functions" as *;
+
+$ff-sans: "League Spartan", sans-serif;
+
+$ff-base: $ff-sans;
+
+$fs-400: remSize(17px);
+$fs-500: remSize(19px);
+$fs-800: remSize(40px);
+$fs-900: remSize(56px);
+
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
