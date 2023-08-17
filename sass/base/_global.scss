@@ -7,3 +7,7 @@ body {
 	color: $body-text-color;
 	background-color: $body-background-color;
 }
+
+main {
+	padding: remSize(82px) 0 remSize(99px);
+}
