@@ -1,7 +1,9 @@
 @use "../abstracts/" as *;
 
 .heading-1 {
-	@include heading($fs-900);
+	@include heading($fs-800);
+	line-height: 2rem;
+	letter-spacing: -1.429px;
 }
 
 .heading-2 {

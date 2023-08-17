@@ -1,1 +1,8 @@
 @use "../abstracts/" as *;
+
+.intro__description {
+	font-size: $fs-500;
+	line-height: remSize(25px);
+	letter-spacing: remSize(-0.633px);
+	color: $clr-neutral-300;
+}
