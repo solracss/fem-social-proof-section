@@ -21,6 +21,13 @@
 
 .reviews {
 	margin-top: remSize(50px);
+
+	@include media(large) {
+		margin-top: remSize(71px);
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.875rem;
+		height: remSize(266px);
+	}
 }
 
 .summary {

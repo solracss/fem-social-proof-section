@@ -30,4 +30,16 @@
 		letter-spacing: remSize(-0.304px);
 		line-height: $lh-22;
 	}
+
+	@include media(large) {
+		max-height: remSize(234px);
+
+		&:nth-child(2) {
+			align-self: center;
+		}
+
+		&:nth-child(3) {
+			align-self: end;
+		}
+	}
 }

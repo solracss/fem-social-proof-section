@@ -10,4 +10,8 @@ body {
 
 main {
 	padding: remSize(82px) 0 remSize(99px);
+
+	@include media(large) {
+		padding: remSize(118px) 0 remSize(99px);
+	}
 }
