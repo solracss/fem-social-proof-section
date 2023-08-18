@@ -9,9 +9,28 @@ body {
 }
 
 main {
-	padding: remSize(82px) 0 remSize(99px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+
+	@include pseudo {
+		background: url("../../img/bg-pattern-top-mobile.svg") no-repeat;
+	}
+
+	@include pseudo(after) {
+		background: url("../../img/bg-pattern-bottom-mobile.svg") no-repeat;
+		background-position: right bottom;
+	}
 
 	@include media(large) {
-		padding: remSize(118px) 0 remSize(99px);
+		@include pseudo {
+			background: url("../../img/bg-pattern-top-desktop.svg") no-repeat;
+		}
+
+		@include pseudo(after) {
+			background: url("../../img/bg-pattern-bottom-desktop.svg") no-repeat;
+			background-position: right bottom;
+		}
 	}
 }
