@@ -5,8 +5,10 @@
 	line-height: 2rem;
 	letter-spacing: -1.429px;
 
-	@include media(medium) {
+	@include media(large) {
 		@include heading($fs-900);
+		text-align: left;
+		line-height: 3rem;
 	}
 }
 

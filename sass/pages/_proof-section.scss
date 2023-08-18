@@ -4,12 +4,33 @@
 	line-height: $lh-25;
 	letter-spacing: remSize(-0.633px);
 	color: $clr-neutral-300;
+
+	@include media(large) {
+		text-align: left;
+	}
 }
 
 .ratings {
 	margin-top: remSize(40px);
+
+	@include media(large) {
+		max-width: remSize(540px);
+		margin: remSize(27px) 0 remSize(18px);
+	}
 }
 
 .reviews {
 	margin-top: remSize(50px);
+}
+
+.summary {
+	@include media(large) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.header {
+	@include media(large) {
+		max-width: remSize(445px);
+	}
 }

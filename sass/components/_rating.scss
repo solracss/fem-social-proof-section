@@ -1,7 +1,8 @@
 @use "../abstracts/" as *;
 
 .rating {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	gap: $grid-gap;
 	padding-block: remSize(15px);
 	border-radius: 8px;
@@ -16,5 +17,21 @@
 	& .title {
 		font-weight: $fw-bold;
 		line-height: 1rem;
+	}
+
+	@include media(large) {
+		padding: remSize(20px) remSize(32px);
+		flex-direction: row;
+		align-items: center;
+		max-width: remSize(445px);
+		gap: 2rem;
+
+		&:nth-child(2) {
+			justify-self: center;
+		}
+
+		&:last-child {
+			justify-self: end;
+		}
 	}
 }
