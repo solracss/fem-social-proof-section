@@ -20,14 +20,10 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Live]()
+- Live Site URL: [Live](https://solracss.github.io/fem-social-proof-section/)
 
 ## My process
 
 ### Built with
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,sass,vscode,vite)](https://skillicons.dev)
-
-### Notes
-
-### What I learned
