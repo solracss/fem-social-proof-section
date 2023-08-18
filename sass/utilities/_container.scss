@@ -3,4 +3,11 @@
 .container {
 	width: min(100% - calc($container-padding * 2), $container-max-width);
 	margin-inline: auto;
+
+	@include media(large) {
+		width: min(
+			100% - calc($container-padding * 2),
+			$container-max-width-desktop
+		);
+	}
 }
