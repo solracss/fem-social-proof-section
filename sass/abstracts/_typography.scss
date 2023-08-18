@@ -12,3 +12,14 @@ $fs-900: remSize(56px);
 $fw-normal: 400;
 $fw-medium: 500;
 $fw-bold: 700;
+
+$lh-22: remSize(22px);
+$lh-25: remSize(25px);
+$lh-32: remSize(32px);
+
+$font-sizes: (
+	"400": remSize(17px),
+	"500": remSize(19px),
+	"800": remSize(40px),
+	"900": remSize(56px),
+);
