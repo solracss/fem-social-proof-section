@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.review {
+	padding: $size-10 $size-8 $size-8;
+	background-color: $clr-neutral-400;
+	color: $clr-neutral-100;
+	border-radius: 8px;
+
+	&__account {
+		display: flex;
+		gap: $size-6;
+		font-weight: $fw-bold;
+	}
+
+	&__avatar {
+		width: $size-10;
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+	}
+
+	& .isVerified {
+		display: block;
+		color: $clr-accent-1;
+		font-weight: $fw-normal;
+		line-height: 1;
+	}
+
+	&__opinion {
+		margin-top: $size-6;
+		letter-spacing: remSize(-0.304px);
+		line-height: $lh-22;
+	}
+}
