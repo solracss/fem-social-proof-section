@@ -15,21 +15,21 @@ main {
 	min-height: 100vh;
 
 	@include pseudo {
-		background: url("../../img/bg-pattern-top-mobile.svg") no-repeat;
+		background: url("//img/bg-pattern-top-mobile.svg") no-repeat;
 	}
 
 	@include pseudo(after) {
-		background: url("../../img/bg-pattern-bottom-mobile.svg") no-repeat;
+		background: url("/img/bg-pattern-bottom-mobile.svg") no-repeat;
 		background-position: right bottom;
 	}
 
 	@include media(large) {
 		@include pseudo {
-			background: url("../../img/bg-pattern-top-desktop.svg") no-repeat;
+			background: url("/img/bg-pattern-top-desktop.svg") no-repeat;
 		}
 
 		@include pseudo(after) {
-			background: url("../../img/bg-pattern-bottom-desktop.svg") no-repeat;
+			background: url("/img/bg-pattern-bottom-desktop.svg") no-repeat;
 			background-position: right bottom;
 		}
 	}
